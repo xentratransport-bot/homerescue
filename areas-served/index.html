@@ -5,33 +5,48 @@
   <link rel="icon" type="image/png" href="/images/logo.png">
   <link rel="apple-touch-icon" href="/images/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Areas Served | House Help Services NYC & NJ</title>
-  <meta name="description" content="House Help Services covers all 5 NYC boroughs and Northern NJ. Find emergency and home improvement services in your neighborhood.">
+  <title>Areas Served — Emergency & Home Improvement | House Help Services NYC</title>
+  <meta name="description" content="House Help Services covers all 5 NYC boroughs and Northern NJ for both emergency services and home improvement. Find your area and the service you need.">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"House Help Services","url":"https://househelpservices.com/areas-served/","telephone":"+12064017828","areaServed":["Manhattan","Brooklyn","Queens","Bronx","Staten Island","Jersey City","Hoboken","Newark","New York City"]}</script>
   <link rel="canonical" href="https://househelpservices.com/areas-served/">
+  <meta property="og:title" content="Areas Served — Emergency & Home Improvement | House Help Services">
+  <meta property="og:description" content="House Help Services covers all 5 NYC boroughs and Northern NJ. Emergency services and home improvement — find your area.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://househelpservices.com/areas-served/">
+  <meta property="og:image" content="https://househelpservices.com/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <style>
-    .borough-section { margin-bottom: 48px; }
-    .borough-title { font-size: 1.3rem; font-weight: 800; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 3px solid #e53e3e; }
-    .borough-title.blue { border-color: #2563EB; }
-    .neighborhood-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-    @media (max-width: 900px) { .neighborhood-grid { grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 600px) { .neighborhood-grid { grid-template-columns: repeat(2, 1fr); } }
-    .neighborhood-link { background: #f8f9fa; border-radius: 8px; padding: 12px 16px; text-decoration: none; color: #333; font-size: 0.9rem; font-weight: 500; transition: all 0.15s; border: 1px solid #eee; }
-    .neighborhood-link:hover { background: #fff; border-color: #2563EB; color: #2563EB; }
+    .division-hero { padding: 64px 0 48px; color: #fff; }
+    .division-hero h1 { font-size: clamp(1.8rem,3.5vw,2.6rem); font-weight: 800; margin-bottom: 12px; }
+    .division-hero p { font-size: 1rem; opacity: .88; max-width: 600px; }
+    .division-tabs { display: flex; gap: 0; border-bottom: 3px solid #eee; margin-bottom: 40px; }
+    .division-tab { padding: 14px 28px; font-weight: 700; font-size: 1rem; cursor: pointer; border: none; background: none; font-family: inherit; color: #666; border-bottom: 3px solid transparent; margin-bottom: -3px; transition: all .2s; }
+    .division-tab.active-red { color: #e53e3e; border-bottom-color: #e53e3e; }
+    .division-tab.active-blue { color: #2563EB; border-bottom-color: #2563EB; }
+    .division-panel { display: none; }
+    .division-panel.active { display: block; }
+    .borough-block { margin-bottom: 40px; }
+    .borough-heading { font-size: 1.1rem; font-weight: 800; margin-bottom: 14px; padding-bottom: 8px; }
+    .borough-heading.red { border-bottom: 3px solid #e53e3e; color: #1a1a2e; }
+    .borough-heading.blue { border-bottom: 3px solid #2563EB; color: #1a1a2e; }
+    .area-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+    @media(max-width:900px){ .area-grid { grid-template-columns: repeat(3,1fr); } }
+    @media(max-width:600px){ .area-grid { grid-template-columns: repeat(2,1fr); } }
+    .area-link { display: block; background: #f8f9fa; border-radius: 8px; padding: 11px 14px; text-decoration: none; color: #333; font-size: .87rem; font-weight: 500; border: 1px solid #eee; transition: all .15s; }
+    .area-link.red:hover { border-color: #e53e3e; color: #e53e3e; background: #fff; }
+    .area-link.blue:hover { border-color: #2563EB; color: #2563EB; background: #fff; }
+    .division-intro { background: #f8f9fa; border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; display: flex; align-items: center; gap: 16px; }
+    .division-intro-icon { font-size: 2rem; }
+    .division-intro h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 4px; }
+    .division-intro p { font-size: .88rem; color: #555; margin: 0; }
   </style>
-  <meta property="og:title" content="Areas Served">
-  <meta property="og:description" content="House Help Services covers all 5 NYC boroughs and Northern NJ. Find emergency and home improvement services in your neighborhood.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://househelpservices.com/areas-served/">
-  <meta property="og:image" content="https://househelpservices.com/images/logo.png">
 </head>
 <body>
-  <div class="top-bar"><span class="pulse"></span> 30-MIN EMERGENCY RESPONSE ACROSS ALL NYC BOROUGHS — (206) 401-7828</div>
-    <header class="header">
+  <div class="top-bar"><span class="pulse"></span> ALL NYC BOROUGHS + NORTHERN NJ — (206) 401-7828</div>
+  <header class="header">
   <div class="container">
     <a href="/" class="logo">
       <img src="/images/logo.png" alt="House Help Services" style="height:40px;border-radius:8px" onerror="this.style.display='none'">
@@ -40,157 +55,262 @@
         <div class="logo-sub">HOME SERVICES NYC</div>
       </div>
     </a>
-
     <nav class="nav">
       <a href="/emergency/">Emergency</a>
       <a href="/home-improvement/">Improvement</a>
       <a href="/areas-served/">Areas</a>
       <a href="/about/">About</a>
     </nav>
-
     <div class="header-phone">
       <span style="color: var(--green); font-size: 10px;">●</span>
       <a href="tel:+12064017828">(206) 401-7828</a>
     </div>
-
     <button class="mobile-menu-btn" aria-label="Menu">☰</button>
   </div>
 </header>
 
-  <section class="loc-hero">
+  <!-- Hero -->
+  <section style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;padding:64px 0 48px;">
     <div class="container">
-      <div class="hero-badge"><span class="pulse"></span> All 5 Boroughs + Northern NJ</div>
-      <h1>🗺️ Areas Served by House Help Services</h1>
-      <p>Emergency home services and home improvement across New York City and Northern New Jersey. 30-minute emergency response from any location below.</p>
-      <a href="tel:+12064017828" class="btn btn-red btn-lg">📞 Call (206) 401-7828</a>
+      <h1 style="font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;margin-bottom:12px;">Areas We Serve</h1>
+      <p style="opacity:.88;max-width:600px;font-size:1rem;">All 5 NYC boroughs and Northern New Jersey — for both emergency services and home improvement. Select your division below to find your area.</p>
+      <div style="display:flex;gap:14px;margin-top:24px;flex-wrap:wrap;">
+        <a href="#emergency" onclick="showPanel('emergency')" style="background:#e53e3e;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:700;">🚨 Emergency Services</a>
+        <a href="#improvement" onclick="showPanel('improvement')" style="background:#2563EB;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:700;">🏠 Home Improvement</a>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
 
-      <!-- Manhattan -->
-      <div class="borough-section">
-        <div class="borough-title">🏙️ Manhattan</div>
-        <div class="neighborhood-grid">
-          <a href="/water-damage-restoration/manhattan/" class="neighborhood-link">Manhattan</a>
-          <a href="/water-damage-restoration/midtown/" class="neighborhood-link">Midtown</a>
-          <a href="/water-damage-restoration/upper-east-side/" class="neighborhood-link">Upper East Side</a>
-          <a href="/water-damage-restoration/upper-west-side/" class="neighborhood-link">Upper West Side</a>
-          <a href="/water-damage-restoration/harlem/" class="neighborhood-link">Harlem</a>
-          <a href="/water-damage-restoration/chelsea/" class="neighborhood-link">Chelsea</a>
-          <a href="/water-damage-restoration/soho/" class="neighborhood-link">SoHo</a>
-          <a href="/water-damage-restoration/tribeca/" class="neighborhood-link">Tribeca</a>
-          <a href="/water-damage-restoration/financial-district/" class="neighborhood-link">Financial District</a>
-          <a href="/water-damage-restoration/east-village/" class="neighborhood-link">East Village</a>
+      <!-- Tabs -->
+      <div class="division-tabs">
+        <button class="division-tab active-red" id="tab-emergency" onclick="showPanel('emergency')">🚨 Emergency Services</button>
+        <button class="division-tab" id="tab-improvement" onclick="showPanel('improvement')">🏠 Home Improvement</button>
+      </div>
+
+      <!-- ══ EMERGENCY PANEL ══ -->
+      <div class="division-panel active" id="panel-emergency">
+        <div class="division-intro">
+          <div class="division-intro-icon">🚨</div>
+          <div>
+            <h3 style="color:#e53e3e;">Emergency Services — 30-Minute Response</h3>
+            <p>Water damage, locksmith, plumbing, electrical, mold, fire damage, sewage cleanup, HVAC emergency. Available 24/7, 365 days a year.</p>
+          </div>
+        </div>
+
+        <div class="borough-block">
+          <div class="borough-heading red">🏙️ Manhattan</div>
+          <div class="area-grid">
+            <a href="/water-damage-restoration/manhattan/" class="area-link red">Manhattan</a>
+            <a href="/water-damage-restoration/midtown/" class="area-link red">Midtown</a>
+            <a href="/water-damage-restoration/upper-east-side/" class="area-link red">Upper East Side</a>
+            <a href="/water-damage-restoration/upper-west-side/" class="area-link red">Upper West Side</a>
+            <a href="/water-damage-restoration/harlem/" class="area-link red">Harlem</a>
+            <a href="/water-damage-restoration/chelsea/" class="area-link red">Chelsea</a>
+            <a href="/water-damage-restoration/soho/" class="area-link red">SoHo</a>
+            <a href="/water-damage-restoration/tribeca/" class="area-link red">TriBeCa</a>
+            <a href="/water-damage-restoration/financial-district/" class="area-link red">Financial District</a>
+            <a href="/water-damage-restoration/east-village/" class="area-link red">East Village</a>
+            <a href="/emergency-plumber/manhattan/" class="area-link red">Emergency Plumber</a>
+            <a href="/emergency-electrician/manhattan/" class="area-link red">Emergency Electrician</a>
+          </div>
+        </div>
+
+        <div class="borough-block">
+          <div class="borough-heading red">🌉 Brooklyn</div>
+          <div class="area-grid">
+            <a href="/water-damage-restoration/brooklyn/" class="area-link red">Brooklyn</a>
+            <a href="/water-damage-restoration/williamsburg/" class="area-link red">Williamsburg</a>
+            <a href="/water-damage-restoration/bed-stuy/" class="area-link red">Bed-Stuy</a>
+            <a href="/water-damage-restoration/park-slope/" class="area-link red">Park Slope</a>
+            <a href="/water-damage-restoration/bushwick/" class="area-link red">Bushwick</a>
+            <a href="/water-damage-restoration/greenpoint/" class="area-link red">Greenpoint</a>
+            <a href="/emergency-plumber/brooklyn/" class="area-link red">Emergency Plumber</a>
+            <a href="/emergency-electrician/brooklyn/" class="area-link red">Emergency Electrician</a>
+          </div>
+        </div>
+
+        <div class="borough-block">
+          <div class="borough-heading red">🌆 Queens</div>
+          <div class="area-grid">
+            <a href="/water-damage-restoration/queens/" class="area-link red">Queens</a>
+            <a href="/water-damage-restoration/astoria/" class="area-link red">Astoria</a>
+            <a href="/water-damage-restoration/long-island-city/" class="area-link red">Long Island City</a>
+            <a href="/water-damage-restoration/flushing/" class="area-link red">Flushing</a>
+            <a href="/water-damage-restoration/jackson-heights/" class="area-link red">Jackson Heights</a>
+            <a href="/emergency-plumber/queens/" class="area-link red">Emergency Plumber</a>
+            <a href="/emergency-electrician/queens/" class="area-link red">Emergency Electrician</a>
+          </div>
+        </div>
+
+        <div class="borough-block">
+          <div class="borough-heading red">🏘️ The Bronx</div>
+          <div class="area-grid">
+            <a href="/water-damage-restoration/bronx/" class="area-link red">Bronx</a>
+            <a href="/water-damage-restoration/fordham/" class="area-link red">Fordham</a>
+            <a href="/water-damage-restoration/riverdale/" class="area-link red">Riverdale</a>
+            <a href="/emergency-plumber/bronx/" class="area-link red">Emergency Plumber</a>
+            <a href="/emergency-electrician/bronx/" class="area-link red">Emergency Electrician</a>
+          </div>
+        </div>
+
+        <div class="borough-block">
+          <div class="borough-heading red">🏝️ Staten Island</div>
+          <div class="area-grid">
+            <a href="/water-damage-restoration/staten-island/" class="area-link red">Staten Island</a>
+            <a href="/emergency-plumber/staten-island/" class="area-link red">Emergency Plumber</a>
+            <a href="/emergency-electrician/staten-island/" class="area-link red">Emergency Electrician</a>
+          </div>
+        </div>
+
+        <div class="borough-block">
+          <div class="borough-heading red">🌿 Northern New Jersey</div>
+          <div class="area-grid">
+            <a href="/water-damage-restoration/jersey-city/" class="area-link red">Jersey City</a>
+            <a href="/water-damage-restoration/hoboken/" class="area-link red">Hoboken</a>
+            <a href="/water-damage-restoration/newark/" class="area-link red">Newark</a>
+            <a href="/water-damage-restoration/paterson/" class="area-link red">Paterson</a>
+            <a href="/water-damage-restoration/elizabeth/" class="area-link red">Elizabeth</a>
+            <a href="/water-damage-restoration/bayonne/" class="area-link red">Bayonne</a>
+            <a href="/water-damage-restoration/north-bergen/" class="area-link red">North Bergen</a>
+            <a href="/water-damage-restoration/weehawken/" class="area-link red">Weehawken</a>
+            <a href="/water-damage-restoration/union-city/" class="area-link red">Union City</a>
+            <a href="/water-damage-restoration/west-new-york/" class="area-link red">West New York</a>
+            <a href="/emergency-plumber/jersey-city/" class="area-link red">JC Emergency Plumber</a>
+            <a href="/emergency-plumber/hoboken/" class="area-link red">Hoboken Emergency Plumber</a>
+          </div>
         </div>
       </div>
 
-      <!-- Brooklyn -->
-      <div class="borough-section">
-        <div class="borough-title">🌉 Brooklyn</div>
-        <div class="neighborhood-grid">
-          <a href="/water-damage-restoration/brooklyn/" class="neighborhood-link">Brooklyn</a>
-          <a href="/water-damage-restoration/williamsburg/" class="neighborhood-link">Williamsburg</a>
-          <a href="/water-damage-restoration/bed-stuy/" class="neighborhood-link">Bed-Stuy</a>
-          <a href="/water-damage-restoration/park-slope/" class="neighborhood-link">Park Slope</a>
-          <a href="/water-damage-restoration/bushwick/" class="neighborhood-link">Bushwick</a>
-          <a href="/water-damage-restoration/greenpoint/" class="neighborhood-link">Greenpoint</a>
+      <!-- ══ IMPROVEMENT PANEL ══ -->
+      <div class="division-panel" id="panel-improvement">
+        <div class="division-intro">
+          <div class="division-intro-icon">🏠</div>
+          <div>
+            <h3 style="color:#2563EB;">Home Improvement — Licensed Contractors</h3>
+            <p>Kitchen remodeling, bathroom renovation, painting, flooring, handyman, HVAC installation. Free estimates, permits handled, quality guaranteed.</p>
+          </div>
         </div>
-      </div>
 
-      <!-- Queens -->
-      <div class="borough-section">
-        <div class="borough-title">🌆 Queens</div>
-        <div class="neighborhood-grid">
-          <a href="/water-damage-restoration/queens/" class="neighborhood-link">Queens</a>
-          <a href="/water-damage-restoration/astoria/" class="neighborhood-link">Astoria</a>
-          <a href="/water-damage-restoration/long-island-city/" class="neighborhood-link">Long Island City</a>
-          <a href="/water-damage-restoration/flushing/" class="neighborhood-link">Flushing</a>
-          <a href="/water-damage-restoration/jackson-heights/" class="neighborhood-link">Jackson Heights</a>
+        <div class="borough-block">
+          <div class="borough-heading blue">🏙️ Manhattan</div>
+          <div class="area-grid">
+            <a href="/kitchen-remodeling/manhattan/" class="area-link blue">Kitchen Remodeling</a>
+            <a href="/bathroom-remodeling/manhattan/" class="area-link blue">Bathroom Remodeling</a>
+            <a href="/painting/manhattan/" class="area-link blue">Painting</a>
+            <a href="/flooring/manhattan/" class="area-link blue">Flooring</a>
+            <a href="/handyman/manhattan/" class="area-link blue">Handyman</a>
+            <a href="/hvac-installation/manhattan/" class="area-link blue">HVAC Installation</a>
+            <a href="/kitchen-remodeling/midtown/" class="area-link blue">Midtown Kitchen</a>
+            <a href="/kitchen-remodeling/upper-east-side/" class="area-link blue">UES Kitchen</a>
+            <a href="/kitchen-remodeling/upper-west-side/" class="area-link blue">UWS Kitchen</a>
+            <a href="/kitchen-remodeling/harlem/" class="area-link blue">Harlem Kitchen</a>
+            <a href="/kitchen-remodeling/chelsea/" class="area-link blue">Chelsea Kitchen</a>
+            <a href="/kitchen-remodeling/soho/" class="area-link blue">SoHo Kitchen</a>
+          </div>
         </div>
-      </div>
 
-      <!-- The Bronx -->
-      <div class="borough-section">
-        <div class="borough-title">🏘️ The Bronx</div>
-        <div class="neighborhood-grid">
-          <a href="/water-damage-restoration/bronx/" class="neighborhood-link">Bronx</a>
-          <a href="/water-damage-restoration/fordham/" class="neighborhood-link">Fordham</a>
-          <a href="/water-damage-restoration/riverdale/" class="neighborhood-link">Riverdale</a>
+        <div class="borough-block">
+          <div class="borough-heading blue">🌉 Brooklyn</div>
+          <div class="area-grid">
+            <a href="/kitchen-remodeling/brooklyn/" class="area-link blue">Kitchen Remodeling</a>
+            <a href="/bathroom-remodeling/brooklyn/" class="area-link blue">Bathroom Remodeling</a>
+            <a href="/painting/brooklyn/" class="area-link blue">Painting</a>
+            <a href="/flooring/brooklyn/" class="area-link blue">Flooring</a>
+            <a href="/handyman/brooklyn/" class="area-link blue">Handyman</a>
+            <a href="/hvac-installation/brooklyn/" class="area-link blue">HVAC Installation</a>
+            <a href="/kitchen-remodeling/williamsburg/" class="area-link blue">Williamsburg Kitchen</a>
+            <a href="/kitchen-remodeling/park-slope/" class="area-link blue">Park Slope Kitchen</a>
+            <a href="/kitchen-remodeling/bed-stuy/" class="area-link blue">Bed-Stuy Kitchen</a>
+            <a href="/kitchen-remodeling/greenpoint/" class="area-link blue">Greenpoint Kitchen</a>
+            <a href="/kitchen-remodeling/bushwick/" class="area-link blue">Bushwick Kitchen</a>
+          </div>
         </div>
-      </div>
 
-      <!-- Staten Island -->
-      <div class="borough-section">
-        <div class="borough-title">🏝️ Staten Island</div>
-        <div class="neighborhood-grid">
-          <a href="/water-damage-restoration/staten-island/" class="neighborhood-link">Staten Island</a>
+        <div class="borough-block">
+          <div class="borough-heading blue">🌆 Queens</div>
+          <div class="area-grid">
+            <a href="/kitchen-remodeling/queens/" class="area-link blue">Kitchen Remodeling</a>
+            <a href="/bathroom-remodeling/queens/" class="area-link blue">Bathroom Remodeling</a>
+            <a href="/painting/queens/" class="area-link blue">Painting</a>
+            <a href="/flooring/queens/" class="area-link blue">Flooring</a>
+            <a href="/handyman/queens/" class="area-link blue">Handyman</a>
+            <a href="/kitchen-remodeling/astoria/" class="area-link blue">Astoria Kitchen</a>
+            <a href="/kitchen-remodeling/long-island-city/" class="area-link blue">LIC Kitchen</a>
+            <a href="/kitchen-remodeling/flushing/" class="area-link blue">Flushing Kitchen</a>
+          </div>
         </div>
-      </div>
 
-      <!-- New Jersey -->
-      <div class="borough-section">
-        <div class="borough-title blue">🌿 Northern New Jersey</div>
-        <div class="neighborhood-grid">
-          <a href="/water-damage-restoration/jersey-city/" class="neighborhood-link">Jersey City</a>
-          <a href="/water-damage-restoration/hoboken/" class="neighborhood-link">Hoboken</a>
-          <a href="/water-damage-restoration/newark/" class="neighborhood-link">Newark</a>
-          <a href="/water-damage-restoration/paterson/" class="neighborhood-link">Paterson</a>
-          <a href="/water-damage-restoration/elizabeth/" class="neighborhood-link">Elizabeth</a>
-          <a href="/water-damage-restoration/bayonne/" class="neighborhood-link">Bayonne</a>
-          <a href="/water-damage-restoration/north-bergen/" class="neighborhood-link">North Bergen</a>
-          <a href="/water-damage-restoration/weehawken/" class="neighborhood-link">Weehawken</a>
-          <a href="/water-damage-restoration/union-city/" class="neighborhood-link">Union City</a>
-          <a href="/water-damage-restoration/west-new-york/" class="neighborhood-link">West New York</a>
+        <div class="borough-block">
+          <div class="borough-heading blue">🏘️ The Bronx</div>
+          <div class="area-grid">
+            <a href="/kitchen-remodeling/bronx/" class="area-link blue">Kitchen Remodeling</a>
+            <a href="/bathroom-remodeling/bronx/" class="area-link blue">Bathroom Remodeling</a>
+            <a href="/painting/bronx/" class="area-link blue">Painting</a>
+            <a href="/flooring/bronx/" class="area-link blue">Flooring</a>
+            <a href="/handyman/bronx/" class="area-link blue">Handyman</a>
+            <a href="/hvac-installation/bronx/" class="area-link blue">HVAC Installation</a>
+          </div>
+        </div>
+
+        <div class="borough-block">
+          <div class="borough-heading blue">🏝️ Staten Island</div>
+          <div class="area-grid">
+            <a href="/kitchen-remodeling/staten-island/" class="area-link blue">Kitchen Remodeling</a>
+            <a href="/bathroom-remodeling/staten-island/" class="area-link blue">Bathroom Remodeling</a>
+            <a href="/painting/staten-island/" class="area-link blue">Painting</a>
+            <a href="/flooring/staten-island/" class="area-link blue">Flooring</a>
+            <a href="/handyman/staten-island/" class="area-link blue">Handyman</a>
+            <a href="/hvac-installation/staten-island/" class="area-link blue">HVAC Installation</a>
+          </div>
+        </div>
+
+        <div class="borough-block">
+          <div class="borough-heading blue">🌿 Northern New Jersey</div>
+          <div class="area-grid">
+            <a href="/kitchen-remodeling/jersey-city/" class="area-link blue">JC Kitchen Remodeling</a>
+            <a href="/kitchen-remodeling/hoboken/" class="area-link blue">Hoboken Kitchen</a>
+            <a href="/kitchen-remodeling/newark/" class="area-link blue">Newark Kitchen</a>
+            <a href="/bathroom-remodeling/jersey-city/" class="area-link blue">JC Bathroom Remodeling</a>
+            <a href="/bathroom-remodeling/hoboken/" class="area-link blue">Hoboken Bathroom</a>
+            <a href="/painting/jersey-city/" class="area-link blue">JC Painting</a>
+            <a href="/painting/hoboken/" class="area-link blue">Hoboken Painting</a>
+            <a href="/hvac-installation/jersey-city/" class="area-link blue">JC HVAC Installation</a>
+            <a href="/hvac-installation/hoboken/" class="area-link blue">Hoboken HVAC</a>
+            <a href="/handyman/jersey-city/" class="area-link blue">JC Handyman</a>
+            <a href="/handyman/hoboken/" class="area-link blue">Hoboken Handyman</a>
+            <a href="/kitchen-remodeling/paterson/" class="area-link blue">Paterson Kitchen</a>
+          </div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <div class="trust-bar">
-    <div class="container">
-      <div class="trust-items">
-        <div class="trust-item"><span class="trust-icon">✓</span> 30-Min Emergency Response</div>
-        <div class="trust-item"><span class="trust-icon">✓</span> All 5 NYC Boroughs</div>
-        <div class="trust-item"><span class="trust-icon">✓</span> Northern New Jersey</div>
-        <div class="trust-item"><span class="trust-icon">✓</span> 24/7 Available</div>
-      </div>
-    </div>
-  </div>
-
   <section class="cta-section">
     <div class="container">
-      <h2>Not Sure If We Cover Your Area?</h2>
-      <p>Call us — we likely do. We cover the entire NYC metro area.</p>
+      <h2>Ready to Get Started?</h2>
+      <p>Call us or request a free estimate for your area.</p>
       <a href="tel:+12064017828" class="cta-phone">(206) 401-7828</a>
     </div>
   </section>
 
-    <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
           <a href="/" class="logo" style="margin-bottom:16px;text-decoration:none;display:flex;align-items:center;gap:10px;">
-            <img src="/images/house-help-logo.jpg" alt="House Help Services" style="height:40px;width:auto;border-radius:4px;">
-            <div>
-              <div class="logo-text">House<span>Help</span></div>
-              <div class="logo-sub">HOME SERVICES NYC</div>
-            </div>
+            <img src="/images/logo.png" alt="House Help Services" style="height:40px;border-radius:4px;" onerror="this.style.display='none'">
+            <div><div class="logo-text">House<span>Help</span></div><div class="logo-sub">HOME SERVICES NYC</div></div>
           </a>
           <p style="margin-top:16px;color:#aaa;font-size:.88rem;line-height:1.6;">NYC's trusted home services company. 24/7 emergency response and professional home improvement. Licensed, insured, vetted pros.</p>
-      <div class="footer-social" style="display:flex;gap:14px;margin-top:16px;">
-          <a href="https://www.facebook.com/share/188opWKJxx/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" style="color:#aaa;text-decoration:none;font-size:22px;" title="Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/househelp.services?igsh=MWVqbGcwaHhjMmdpbg%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" style="color:#aaa;text-decoration:none;font-size:22px;" title="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://pin.it/5S03sAGn7" target="_blank" rel="noopener" aria-label="Pinterest" style="color:#aaa;text-decoration:none;" title="Pinterest">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-          </a>
-        </div>
+          <div class="footer-social" style="display:flex;gap:14px;margin-top:16px;">
+            <a href="https://www.facebook.com/share/188opWKJxx/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" style="color:#aaa;text-decoration:none;" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/househelp.services?igsh=MWVqbGcwaHhjMmdpbg%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" style="color:#aaa;text-decoration:none;" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://pin.it/5S03sAGn7" target="_blank" rel="noopener" aria-label="Pinterest" style="color:#aaa;text-decoration:none;" title="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
+          </div>
         </div>
         <div>
           <h4>🚨 Emergency Services</h4>
@@ -204,12 +324,12 @@
         <div>
           <h4>🏠 Home Improvement</h4>
           <ul>
-            <li><a href="/home-improvement/kitchen-remodeling/">Kitchen Remodeling</a></li>
-            <li><a href="/home-improvement/bathroom-remodeling/">Bathroom Remodeling</a></li>
-            <li><a href="/home-improvement/painting/">Painting</a></li>
-            <li><a href="/home-improvement/flooring/">Flooring</a></li>
-            <li><a href="/home-improvement/handyman/">Handyman</a></li>
-            <li><a href="/hvac-emergency/">HVAC</a></li>
+            <li><a href="/kitchen-remodeling/">Kitchen Remodeling</a></li>
+            <li><a href="/bathroom-remodeling/">Bathroom Remodeling</a></li>
+            <li><a href="/painting/">Painting</a></li>
+            <li><a href="/flooring/">Flooring</a></li>
+            <li><a href="/handyman/">Handyman</a></li>
+            <li><a href="/hvac-installation/">HVAC</a></li>
           </ul>
         </div>
         <div>
@@ -232,40 +352,33 @@
     </div>
   </footer>
 
-
 <script>
+function showPanel(id) {
+  document.querySelectorAll('.division-panel').forEach(function(p){ p.classList.remove('active'); });
+  document.querySelectorAll('.division-tab').forEach(function(t){ t.classList.remove('active-red','active-blue'); });
+  document.getElementById('panel-' + id).classList.add('active');
+  if (id === 'emergency') {
+    document.getElementById('tab-emergency').classList.add('active-red');
+  } else {
+    document.getElementById('tab-improvement').classList.add('active-blue');
+  }
+}
+
+// Auto-switch based on URL hash
+if (window.location.hash === '#improvement') showPanel('improvement');
+if (window.location.hash === '#emergency') showPanel('emergency');
+
 (function(){
   var menuBtn = document.querySelector('.mobile-menu-btn');
   var nav = document.querySelector('.nav');
-  if (!menuBtn || !nav) return;
-
-  // Hamburger toggle
-  menuBtn.addEventListener('click', function(e) {
-    e.stopPropagation();
+  if(!menuBtn||!nav) return;
+  menuBtn.addEventListener('click', function(){
     nav.classList.toggle('nav-open');
     this.textContent = nav.classList.contains('nav-open') ? '✕' : '☰';
   });
-
-  // Mobile dropdown toggles
-  var isMobile = function() { return window.innerWidth <= 968; };
-  nav.querySelectorAll('.has-dropdown .nav-parent').forEach(function(parent) {
-    parent.addEventListener('click', function(e) {
-      if (!isMobile()) return;
-      e.preventDefault();
-      e.stopPropagation();
-      var item = this.closest('.has-dropdown');
-      var isOpen = item.classList.contains('dropdown-open');
-      // Close all others
-      nav.querySelectorAll('.has-dropdown').forEach(function(i){ i.classList.remove('dropdown-open'); });
-      if (!isOpen) item.classList.add('dropdown-open');
-    });
-  });
-
-  // Close on outside tap
-  document.addEventListener('click', function() {
+  document.addEventListener('click', function(){
     nav.classList.remove('nav-open');
     menuBtn.textContent = '☰';
-    nav.querySelectorAll('.has-dropdown').forEach(function(i){ i.classList.remove('dropdown-open'); });
   });
   nav.addEventListener('click', function(e){ e.stopPropagation(); });
 })();
