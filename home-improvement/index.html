@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Home Improvement | Kitchen, Bath, Painting, Flooring | House Help Services</title>
+  <meta name="description" content="NYC home improvement services. Kitchen remodeling, bathroom renovation, painting, flooring, handyman, and HVAC. Free estimates. Licensed contractors. Call (212) 555-0199.">
+  <link rel="canonical" href="https://homerescueservices.com/home-improvement/">
+  <meta property="og:title" content="NYC Home Improvement | House Help Services">
+  <meta property="og:description" content="Kitchen, bathroom, painting, flooring, handyman, HVAC in NYC. Free estimates. Licensed contractors. Call (212) 555-0199.">
+  <meta property="og:url" content="https://homerescueservices.com/home-improvement/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    :root { --blue: #2563EB; --blue-dark: #1d4ed8; --blue-light: #eff6ff; }
+    .improvement-hero {
+      background: linear-gradient(135deg, #1e3a5f 0%, #2563EB 100%);
+      color: #fff;
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+    .improvement-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; margin-bottom: 16px; }
+    .improvement-hero p { font-size: 1.15rem; opacity: 0.9; max-width: 640px; margin: 0 auto 32px; }
+    .stats-bar-blue { background: var(--blue-dark); padding: 20px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center; }
+    @media (max-width: 768px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+    .stat-item { color: #fff; }
+    .stat-number { font-size: 2rem; font-weight: 800; display: block; }
+    .stat-label { font-size: 0.85rem; opacity: 0.85; }
+    .service-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    @media (max-width: 900px) { .service-cards { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .service-cards { grid-template-columns: 1fr; } }
+    .service-card {
+      border: 2px solid #dbeafe;
+      border-radius: 16px;
+      padding: 28px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s;
+      display: block;
+      background: #fff;
+    }
+    .service-card:hover {
+      border-color: var(--blue);
+      box-shadow: 0 8px 32px rgba(37,99,235,0.15);
+      transform: translateY(-2px);
+    }
+    .service-card-icon { font-size: 2.5rem; margin-bottom: 12px; display: block; }
+    .service-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; color: #1a1a2e; }
+    .service-card p { font-size: 0.9rem; color: #666; margin: 0; }
+    .service-card .tag { font-size: 0.8rem; color: var(--blue); font-weight: 600; margin-top: 12px; display: block; }
+    .before-after {
+      background: var(--blue-light);
+      border-radius: 16px;
+      padding: 40px;
+      margin: 48px 0;
+      text-align: center;
+    }
+    .before-after h2 { color: var(--blue-dark); margin-bottom: 12px; }
+    .before-after p { color: #444; max-width: 600px; margin: 0 auto 24px; }
+    .before-after-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 16px; align-items: center; }
+    @media (max-width: 600px) { .before-after-grid { grid-template-columns: 1fr; } }
+    .before-after-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      border: 2px solid #dbeafe;
+    }
+    .before-after-box.after { border-color: var(--blue); }
+    .before-after-box h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .before-after-box h4.before-label { color: #999; }
+    .before-after-box h4.after-label { color: var(--blue); }
+    .before-after-box p { font-size: 0.9rem; color: #555; margin: 0; }
+    .arrow-divider { font-size: 2rem; color: var(--blue); }
+  </style>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "House Help Services — Home Improvement Division",
+  "description": "NYC home improvement services including kitchen remodeling, bathroom renovation, interior painting, flooring installation, handyman services, and HVAC installation.",
+  "telephone": "+1-212-555-0199",
+  "url": "https://homerescueservices.com/home-improvement/",
+  "areaServed": "New York City",
+  "openingHours": "Mo-Su 08:00-20:00"
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer free estimates for home improvement in NYC?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. House Help Services provides free, no-obligation estimates for all home improvement projects in NYC. We schedule a consultation at your convenience, assess the scope of work, and provide a detailed written quote within 24 hours."}
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a kitchen remodel take in NYC?",
+      "acceptedAnswer": {"@type": "Answer", "text": "A standard kitchen remodel in NYC typically takes 3–6 weeks depending on scope — cabinet replacement, countertop installation, plumbing and electrical work, and flooring. We provide a detailed timeline before work begins."}
+    },
+    {
+      "@type": "Question",
+      "name": "Are your home improvement contractors licensed in NYC?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. All House Help Services contractors are fully licensed by New York City and New York State for their respective trades. We carry full general liability insurance and workers' compensation coverage on every project."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle NYC permits for home improvement projects?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. We handle all required NYC Department of Buildings permits for projects that require them, including structural changes, electrical upgrades, and plumbing work. Permit fees are included in our project quote."}
+    },
+    {
+      "@type": "Question",
+      "name": "What is your service area for home improvement in NYC?",
+      "acceptedAnswer": {"@type": "Answer", "text": "We serve all five NYC boroughs — Manhattan, Brooklyn, Queens, the Bronx, and Staten Island — plus Jersey City, Hoboken, and nearby Northern New Jersey communities."}
+    }
+  ]
+}</script>
+</head>
+<body>
+
+  <div class="top-bar">
+    <span class="pulse"></span>
+    FREE ESTIMATES — NYC HOME IMPROVEMENT — (212) 555-0199
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">
+        <div class="logo-icon">🏠</div>
+        <div>
+          <div class="logo-text">House<span>Help</span></div>
+          <div class="logo-sub">Home Services NYC</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="/emergency/">🚨 Emergency</a>
+        <a href="/home-improvement/" style="color:var(--blue);font-weight:700;">🏠 Improvement</a>
+        <a href="/home-improvement/kitchen-remodeling/">Kitchen</a>
+        <a href="/home-improvement/bathroom-remodeling/">Bathroom</a>
+        <a href="/home-improvement/painting/">Painting</a>
+        <a href="/home-improvement/flooring/">Flooring</a>
+      </nav>
+      <div class="header-phone">
+        <span style="color: var(--green); font-size: 10px;">●</span>
+        <a href="tel:+12125550199">(212) 555-0199</a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="improvement-hero">
+    <div class="container">
+      <div class="hero-badge"><span class="pulse"></span> Free Estimates — All 5 Boroughs</div>
+      <h1>🏠 NYC Home Improvement —<br>Kitchen, Bath, Painting, Flooring & More</h1>
+      <p>Transform your NYC home with House Help Services. Licensed contractors, quality materials, on-time delivery. From a fresh coat of paint to a full kitchen gut renovation — we do it all.</p>
+      <div class="hero-ctas">
+        <a href="#form" class="btn btn-red btn-lg" style="background:var(--blue);">🏠 Get a Free Estimate</a>
+        <a href="tel:+12125550199" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:#fff;">📞 (212) 555-0199</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-bar-blue">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Free</span>
+          <span class="stat-label">Estimates</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Licensed & Insured</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">✅</span>
+          <span class="stat-label">Satisfaction Guaranteed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <img src="/images/home-improvement-hub.png" alt="NYC home improvement kitchen and bathroom remodeling by House Help Services" style="width:60%;display:block;margin:0 auto 40px;border-radius:16px;">
+      <div class="section-header">
+        <span class="section-label">Our Services</span>
+        <h2>Everything Your NYC Home Needs</h2>
+        <p>One licensed contractor team for every home improvement project — from quick fixes to full renovations.</p>
+      </div>
+
+      <div class="service-cards">
+        <a href="/home-improvement/kitchen-remodeling/" class="service-card">
+          <span class="service-card-icon">🍳</span>
+          <h3>Kitchen Remodeling</h3>
+          <p>Full kitchen gut renovations, cabinet replacement, countertop installation, tile backsplash, and kitchen island additions.</p>
+          <span class="tag">📋 Free estimate • 3–6 week timeline</span>
+        </a>
+        <a href="/home-improvement/bathroom-remodeling/" class="service-card">
+          <span class="service-card-icon">🛁</span>
+          <h3>Bathroom Remodeling</h3>
+          <p>Bathroom gut renovations, tile work, vanity replacement, shower/tub installation, and complete bathroom redesigns.</p>
+          <span class="tag">📋 Free estimate • 2–4 week timeline</span>
+        </a>
+        <a href="/home-improvement/painting/" class="service-card">
+          <span class="service-card-icon">🎨</span>
+          <h3>Interior & Exterior Painting</h3>
+          <p>Apartment painting, house painting, commercial painting, cabinet painting, and wallpaper removal across NYC.</p>
+          <span class="tag">📋 Free estimate • 1–5 day timeline</span>
+        </a>
+        <a href="/home-improvement/flooring/" class="service-card">
+          <span class="service-card-icon">🪵</span>
+          <h3>Flooring Installation</h3>
+          <p>Hardwood, engineered wood, laminate, luxury vinyl plank, tile, and carpet installation and refinishing.</p>
+          <span class="tag">📋 Free estimate • 1–3 day timeline</span>
+        </a>
+        <a href="/home-improvement/handyman/" class="service-card">
+          <span class="service-card-icon">🔨</span>
+          <h3>Handyman Services</h3>
+          <p>Furniture assembly, TV mounting, door repair, drywall patching, fixture installation, and general repairs.</p>
+          <span class="tag">📋 Hourly or flat rate</span>
+        </a>
+        <a href="/home-improvement/hvac/" class="service-card">
+          <span class="service-card-icon">❄️</span>
+          <h3>HVAC Installation</h3>
+          <p>Central AC installation, mini-split systems, ductwork, ventilation, and heating system upgrades.</p>
+          <span class="tag">📋 Free estimate • 1–3 day install</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-gray">
+    <div class="container">
+      <div class="before-after">
+        <h2>The House Help Services Difference</h2>
+        <p>We don't just fix it — we transform it. Here's what our clients experience before and after working with us.</p>
+        <div class="before-after-grid">
+          <div class="before-after-box">
+            <h4 class="before-label">Before House Help</h4>
+            <p>Outdated kitchen from the 80s, cracked tiles, broken cabinets, no counter space. Apartment feels dark and cramped.</p>
+          </div>
+          <div class="arrow-divider">→</div>
+          <div class="before-after-box after">
+            <h4 class="after-label">After House Help</h4>
+            <p>Modern white shaker cabinets, quartz countertops, subway tile backsplash, recessed lighting. Kitchen that adds real value to the apartment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header" style="color:#fff">
+        <span class="section-label">How It Works</span>
+        <h2 style="color:#fff">Your Project in 3 Simple Steps</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Free Consultation</h3>
+          <p>Call or request online. We schedule a free in-home consultation and provide a detailed written quote within 24 hours.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>We Handle Everything</h3>
+          <p>Permits, materials, scheduling, and licensed tradespeople — we manage the entire project so you don't have to.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Move In & Enjoy</h3>
+          <p>Final walkthrough, punch list completed, satisfaction guaranteed. Your NYC home, transformed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="areas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Service Areas</span>
+        <h2>Home Improvement Across NYC</h2>
+        <p>Licensed contractors serving all five boroughs and Northern New Jersey.</p>
+      </div>
+      <div class="areas-grid">
+        <a href="/water-damage-restoration/manhattan/" class="area-link">Manhattan</a>
+        <a href="/water-damage-restoration/brooklyn/" class="area-link">Brooklyn</a>
+        <a href="/water-damage-restoration/queens/" class="area-link">Queens</a>
+        <a href="/water-damage-restoration/bronx/" class="area-link">The Bronx</a>
+        <a href="/water-damage-restoration/staten-island/" class="area-link">Staten Island</a>
+        <a href="/water-damage-restoration/jersey-city/" class="area-link">Jersey City</a>
+        <a href="/water-damage-restoration/hoboken/" class="area-link">Hoboken</a>
+        <a href="/water-damage-restoration/astoria/" class="area-link">Astoria</a>
+        <a href="/water-damage-restoration/williamsburg/" class="area-link">Williamsburg</a>
+        <a href="/water-damage-restoration/upper-east-side/" class="area-link">Upper East Side</a>
+        <a href="/water-damage-restoration/park-slope/" class="area-link">Park Slope</a>
+        <a href="/water-damage-restoration/harlem/" class="area-link">Harlem</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Home Improvement Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">Do you offer free estimates for home improvement in NYC?</button>
+          <div class="faq-a"><p>Yes. House Help Services provides free, no-obligation estimates for all home improvement projects in NYC. We schedule a consultation at your convenience and provide a detailed written quote within 24 hours.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">How long does a kitchen remodel take in NYC?</button>
+          <div class="faq-a"><p>A standard kitchen remodel in NYC typically takes 3–6 weeks depending on scope. We provide a detailed timeline before work begins.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">Are your contractors licensed in NYC?</button>
+          <div class="faq-a"><p>Yes. All contractors are fully licensed by New York City and New York State for their trades, with full general liability insurance and workers' compensation on every project.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">Do you handle NYC permits?</button>
+          <div class="faq-a"><p>Yes. We handle all required NYC Department of Buildings permits for structural changes, electrical upgrades, and plumbing work. Permit fees are included in our project quote.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">What areas do you serve for home improvement?</button>
+          <div class="faq-a"><p>All five NYC boroughs — Manhattan, Brooklyn, Queens, the Bronx, and Staten Island — plus Jersey City, Hoboken, and nearby Northern NJ communities.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="form" style="background:var(--blue-light);">
+    <div class="container" style="max-width:600px;">
+      <div class="section-header">
+        <span class="section-label">Get a Free Estimate</span>
+        <h2>Request Your Free Home Improvement Quote</h2>
+      </div>
+      <div class="hero-form" style="box-shadow:0 4px 20px rgba(37,99,235,0.12);">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_KEY_HERE">
+          <input type="hidden" name="subject" value="🏠 Home Improvement Quote Request — NYC">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option>Kitchen Remodeling</option>
+              <option>Bathroom Remodeling</option>
+              <option>Interior Painting</option>
+              <option>Exterior Painting</option>
+              <option>Flooring Installation</option>
+              <option>Handyman Services</option>
+              <option>HVAC Installation</option>
+              <option>Multiple Services</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="timeline">Project Timeline</label>
+            <select id="timeline" name="timeline">
+              <option>As soon as possible</option>
+              <option>Within 1 month</option>
+              <option>1–3 months</option>
+              <option>3–6 months</option>
+              <option>Just getting estimates</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="address">Property Address</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+          <div class="form-group">
+            <label for="details">Describe Your Project</label>
+            <textarea id="details" name="details" rows="3" placeholder="Tell us about the project scope, size, any specific requirements..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg" style="background:var(--blue);color:#fff;width:100%;border:none;padding:16px;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;">🏠 Get My Free Estimate</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Transform Your NYC Home?</h2>
+      <p>Free estimates. Licensed contractors. Satisfaction guaranteed.</p>
+      <a href="tel:+12125550199" class="cta-phone">(212) 555-0199</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="margin-bottom:16px;">
+            <div class="logo-icon">🏠</div>
+            <div>
+              <div class="logo-text">House<span>Help</span></div>
+              <div class="logo-sub">Home Services NYC</div>
+            </div>
+          </div>
+          <p>NYC's complete home services. Emergency response and home improvement. Licensed, insured.</p>
+        </div>
+        <div>
+          <h4>🏠 Home Improvement</h4>
+          <ul>
+            <li><a href="/home-improvement/kitchen-remodeling/">Kitchen Remodeling</a></li>
+            <li><a href="/home-improvement/bathroom-remodeling/">Bathroom Remodeling</a></li>
+            <li><a href="/home-improvement/painting/">Painting</a></li>
+            <li><a href="/home-improvement/flooring/">Flooring</a></li>
+            <li><a href="/home-improvement/handyman/">Handyman</a></li>
+            <li><a href="/home-improvement/hvac/">HVAC Install</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>🚨 Emergency Services</h4>
+          <ul>
+            <li><a href="/water-damage-restoration/">Water Damage</a></li>
+            <li><a href="/locksmith/">Locksmith</a></li>
+            <li><a href="/emergency-plumber/">Plumbing</a></li>
+            <li><a href="/emergency-electrician/">Electrical</a></li>
+            <li><a href="/hvac-emergency/">HVAC Emergency</a></li>
+            <li><a href="/mold-remediation/">Mold</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+12125550199">📞 (212) 555-0199</a></li>
+            <li><a href="mailto:help@househelpservices.com">📧 help@househelpservices.com</a></li>
+            <li>Mon–Sat 8AM–8PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 House Help Services LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
