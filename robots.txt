@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://homerescueservices.com/sitemap.xml
+Sitemap: https://househelpservices.com/sitemap.xml
