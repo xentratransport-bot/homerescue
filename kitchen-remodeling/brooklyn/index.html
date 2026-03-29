@@ -77,11 +77,34 @@
           <div class="logo-sub">HOME SERVICES NYC</div>
         </div>
       </a>
-      <nav class="nav">
-        <a href="/emergency/">🚨 Emergency</a>
-        <a href="/home-improvement/">🏠 Improvement</a>
-        <a href="/areas-served/">Areas Served</a>
-        <a href="/about/">About</a>
+            <nav class="nav">
+        <div class="nav-item has-dropdown">
+          <a href="/emergency/" class="nav-parent">🚨 Emergency <span class="nav-arrow">▾</span></a>
+          <div class="dropdown">
+            <a href="/water-damage-restoration/">💧 Water Damage Restoration</a>
+            <a href="/locksmith/">🔑 Emergency Locksmith</a>
+            <a href="/emergency-plumber/">🔧 Emergency Plumbing</a>
+            <a href="/emergency-electrician/">⚡ Emergency Electrical</a>
+            <a href="/fire-damage-restoration/">🔥 Fire Damage Restoration</a>
+            <a href="/mold-remediation/">🍃 Mold Remediation</a>
+            <a href="/sewage-cleanup/">🚿 Sewage Cleanup</a>
+            <a href="/hvac-emergency/">❄️ HVAC Emergency</a>
+            <a href="/emergency-board-up/">🪵 Board-Up Services</a>
+          </div>
+        </div>
+        <div class="nav-item has-dropdown">
+          <a href="/home-improvement/" class="nav-parent">🏠 Improvement <span class="nav-arrow">▾</span></a>
+          <div class="dropdown">
+            <a href="/home-improvement/kitchen-remodeling/">🍳 Kitchen Remodeling</a>
+            <a href="/home-improvement/bathroom-remodeling/">🛁 Bathroom Remodeling</a>
+            <a href="/home-improvement/painting/">🖌️ Painting</a>
+            <a href="/home-improvement/flooring/">🪵 Flooring</a>
+            <a href="/home-improvement/handyman/">🔨 Handyman</a>
+            <a href="/hvac-emergency/">❄️ HVAC</a>
+          </div>
+        </div>
+        <a href="/areas-served/" class="nav-item">Areas Served</a>
+        <a href="/about/" class="nav-item">About</a>
       </nav>
       <div class="header-phone"><span style="color:var(--green);font-size:10px;">●</span><a href="tel:+12125550199">(212) 555-0199</a></div>
       <button class="mobile-menu-btn" aria-label="Menu">☰</button>
@@ -229,13 +252,43 @@
     </div>
   </footer>
 
+
 <script>
-const menuBtn = document.querySelector('.mobile-menu-btn');
-const nav = document.querySelector('.nav');
-menuBtn.addEventListener('click', function() {
-  nav.classList.toggle('nav-open');
-  this.textContent = nav.classList.contains('nav-open') ? '✕' : '☰';
-});
+(function(){
+  var menuBtn = document.querySelector('.mobile-menu-btn');
+  var nav = document.querySelector('.nav');
+  if (!menuBtn || !nav) return;
+
+  // Hamburger toggle
+  menuBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    nav.classList.toggle('nav-open');
+    this.textContent = nav.classList.contains('nav-open') ? '✕' : '☰';
+  });
+
+  // Mobile dropdown toggles
+  var isMobile = function() { return window.innerWidth <= 968; };
+  nav.querySelectorAll('.has-dropdown .nav-parent').forEach(function(parent) {
+    parent.addEventListener('click', function(e) {
+      if (!isMobile()) return;
+      e.preventDefault();
+      e.stopPropagation();
+      var item = this.closest('.has-dropdown');
+      var isOpen = item.classList.contains('dropdown-open');
+      // Close all others
+      nav.querySelectorAll('.has-dropdown').forEach(function(i){ i.classList.remove('dropdown-open'); });
+      if (!isOpen) item.classList.add('dropdown-open');
+    });
+  });
+
+  // Close on outside tap
+  document.addEventListener('click', function() {
+    nav.classList.remove('nav-open');
+    menuBtn.textContent = '☰';
+    nav.querySelectorAll('.has-dropdown').forEach(function(i){ i.classList.remove('dropdown-open'); });
+  });
+  nav.addEventListener('click', function(e){ e.stopPropagation(); });
+})();
 </script>
 </body>
 </html>
