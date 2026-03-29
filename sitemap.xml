@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url><loc>https://homerescueservices.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- Division Hubs -->
+  <url><loc>https://homerescueservices.com/emergency/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://homerescueservices.com/home-improvement/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Emergency Service Hubs -->
   <url><loc>https://homerescueservices.com/water-damage-restoration/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://homerescueservices.com/locksmith-services/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://homerescueservices.com/locksmith/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://homerescueservices.com/emergency-plumber/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/emergency-electrician/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/emergency-board-up/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/fire-damage-restoration/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/mold-remediation/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/sewage-cleanup/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/hvac-emergency/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Water Damage Location Pages -->
   <url><loc>https://homerescueservices.com/water-damage-restoration/manhattan/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/water-damage-restoration/brooklyn/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/water-damage-restoration/queens/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/water-damage-restoration/bronx/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/water-damage-restoration/staten-island/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://homerescueservices.com/water-damage-restoration/east-village/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://homerescueservices.com/water-damage-restoration/williamsburg/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/water-damage-restoration/astoria/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/water-damage-restoration/williamsburg/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/water-damage-restoration/east-village/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/water-damage-restoration/harlem/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/water-damage-restoration/upper-west-side/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/water-damage-restoration/upper-east-side/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -38,14 +55,16 @@
   <url><loc>https://homerescueservices.com/water-damage-restoration/weehawken/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/water-damage-restoration/north-bergen/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/water-damage-restoration/west-new-york/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Locksmith Location Pages -->
   <url><loc>https://homerescueservices.com/locksmith/manhattan/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/locksmith/brooklyn/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/locksmith/queens/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/locksmith/bronx/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/locksmith/staten-island/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://homerescueservices.com/locksmith/east-village/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://homerescueservices.com/locksmith/williamsburg/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/locksmith/astoria/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/locksmith/williamsburg/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/locksmith/east-village/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/locksmith/harlem/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/locksmith/upper-west-side/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/locksmith/upper-east-side/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -73,29 +92,7 @@
   <url><loc>https://homerescueservices.com/locksmith/weehawken/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/locksmith/north-bergen/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/locksmith/west-new-york/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <!-- Company Pages -->
-  <url><loc>https://homerescueservices.com/about/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/how-it-works/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/areas-served/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/for-contractors/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://homerescueservices.com/contact/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/testimonials/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/privacy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <!-- Hub Pages -->
-  <url><loc>https://homerescueservices.com/emergency/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://homerescueservices.com/home-improvement/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <!-- Blog -->
-  <url><loc>https://homerescueservices.com/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://homerescueservices.com/blog/what-to-do-pipe-bursts-nyc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/blog/kitchen-remodel-cost-nyc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/blog/locksmith-scams-nyc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/blog/bathroom-remodel-timeline/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/blog/water-damage-insurance-claim/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <!-- Resources -->
-  <url><loc>https://homerescueservices.com/resources/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://homerescueservices.com/resources/water-damage-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/resources/hiring-contractor-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://homerescueservices.com/resources/home-remodel-checklist/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
   <!-- Kitchen Remodeling Location Pages -->
   <url><loc>https://homerescueservices.com/kitchen-remodeling/manhattan/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/kitchen-remodeling/brooklyn/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -104,4 +101,28 @@
   <url><loc>https://homerescueservices.com/kitchen-remodeling/staten-island/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/kitchen-remodeling/jersey-city/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://homerescueservices.com/kitchen-remodeling/hoboken/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://homerescueservices.com/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/blog/what-to-do-pipe-bursts-nyc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/blog/kitchen-remodel-cost-nyc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/blog/locksmith-scams-nyc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/blog/bathroom-remodel-timeline/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/blog/water-damage-insurance-claim/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Resources -->
+  <url><loc>https://homerescueservices.com/resources/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://homerescueservices.com/resources/water-damage-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/resources/hiring-contractor-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/resources/home-remodel-checklist/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Company Pages -->
+  <url><loc>https://homerescueservices.com/about/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/how-it-works/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/areas-served/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/for-contractors/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://homerescueservices.com/contact/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/testimonials/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://homerescueservices.com/privacy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
 </urlset>
