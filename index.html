@@ -3,416 +3,454 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>House Help Services | 24/7 Water Damage, Locksmith, Plumbing & Electrical | NYC</title>
-  <meta name="description" content="NYC's fastest 24/7 home emergency services. Water damage restoration, emergency locksmith, plumbing & electrical. Licensed, insured, 30-minute response. Call (212) 555-0199.">
-  <meta name="keywords" content="emergency home services NYC, water damage restoration NYC, emergency locksmith NYC, 24 hour plumber NYC, emergency electrician NYC, flood cleanup New York">
+  <title>House Help Services NYC | Emergency & Home Improvement | 24/7</title>
+  <meta name="description" content="NYC's complete home services company. 24/7 emergency services (water damage, locksmith, plumbing, electrical) and home improvement (kitchen, bathroom, flooring, painting). Call (212) 555-0199.">
   <link rel="canonical" href="https://homerescueservices.com/">
-  <meta property="og:title" content="House Help Services | 24/7 NYC Home Emergencies">
-  <meta property="og:description" content="Water damage, locksmith, plumbing & electrical emergencies. 30-minute response across NYC. Licensed & insured.">
+  <meta property="og:title" content="House Help Services NYC | Emergency & Home Improvement">
+  <meta property="og:description" content="NYC's complete home services. Emergency response and home improvement. One call, every home need. (212) 555-0199.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://homerescueservices.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "House Help Services",
-    "description": "24/7 home emergency services in NYC including water damage restoration, emergency locksmith, plumbing and electrical services.",
-    "url": "https://homerescueservices.com",
-    "telephone": "+1-212-555-0199",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "New York",
-      "addressRegion": "NY",
-      "addressCountry": "US"
+  <style>
+    .split-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin: 48px 0;
+    }
+    @media (max-width: 768px) {
+      .split-section { grid-template-columns: 1fr; }
+    }
+    .division-card {
+      border-radius: 16px;
+      padding: 36px;
+      border: 2px solid transparent;
+    }
+    .division-card.emergency {
+      background: #fff5f5;
+      border-color: #e53e3e;
+    }
+    .division-card.improvement {
+      background: #f0f7ff;
+      border-color: #2b6cb0;
+    }
+    .division-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+    .division-card.emergency h2 { color: #c53030; }
+    .division-card.improvement h2 { color: #2b6cb0; }
+    .division-card p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+    .service-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px 0;
+    }
+    .service-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.07);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .service-list li:last-child { border-bottom: none; }
+    .btn-emergency {
+      background: #e53e3e;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .btn-emergency:hover { background: #c53030; }
+    .btn-improvement {
+      background: #2b6cb0;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .btn-improvement:hover { background: #1e4e8c; }
+    .hero-split-headline {
+      text-align: center;
+      padding: 60px 0 20px;
+    }
+    .hero-split-headline h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .hero-split-headline p {
+      font-size: 1.15rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    .hero-cta-pair {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .badge-red { background: #e53e3e; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+    .badge-blue { background: #2b6cb0; color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+  </style>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "House Help Services",
+  "description": "NYC's complete home services company offering 24/7 emergency services and home improvement across all five boroughs and New Jersey.",
+  "url": "https://homerescueservices.com",
+  "telephone": "+1-212-555-0199",
+  "address": {"@type": "PostalAddress", "addressLocality": "New York", "addressRegion": "NY", "addressCountry": "US"},
+  "areaServed": "New York City",
+  "openingHours": "Mo-Su 00:00-24:00"
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What emergency services do you offer in NYC?",
+      "acceptedAnswer": {"@type": "Answer", "text": "House Help Services provides 24/7 emergency water damage restoration, emergency locksmith, burst pipe plumbing repair, electrical emergencies, HVAC emergencies, mold remediation, fire damage restoration, sewage cleanup, and emergency board-up across all five NYC boroughs and Northern New Jersey."}
     },
-    "areaServed": [
-      { "@type": "City", "name": "New York" },
-      { "@type": "City", "name": "Jersey City" },
-      { "@type": "City", "name": "Newark" },
-      { "@type": "City", "name": "Hoboken" }
-    ],
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "00:00",
-      "closes": "23:59"
+    {
+      "@type": "Question",
+      "name": "What home improvement services do you offer in NYC?",
+      "acceptedAnswer": {"@type": "Answer", "text": "We offer kitchen remodeling, bathroom remodeling, interior and exterior painting, hardwood and tile flooring installation, general handyman services, and HVAC installation and maintenance across NYC."}
     },
-    "priceRange": "$$",
-    "sameAs": []
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How fast can you respond to an emergency?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We dispatch the nearest available technician immediately. Average response time is 30 minutes or less across all NYC boroughs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you handle insurance claims for water damage?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We work directly with all major insurance companies and can help you file and manage your water damage claim from start to finish."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are your technicians licensed and insured?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Every House Help Services technician is fully licensed, bonded, and insured. We verify all credentials and maintain $2M in general liability coverage."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What areas do you serve?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We serve all five NYC boroughs (Manhattan, Brooklyn, Queens, Bronx, Staten Island) plus Jersey City, Hoboken, Newark, and surrounding NJ cities."
-        }
-      }
-    ]
-  }
-  </script>
+    {
+      "@type": "Question",
+      "name": "How fast do you respond to emergencies in NYC?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Our average emergency response time is 30 minutes or less across all five NYC boroughs. Locksmith emergencies are often resolved in 15–20 minutes. We are available 24 hours a day, 7 days a week, 365 days a year."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with insurance for emergency repairs?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. House Help Services works directly with all major insurance carriers. Our technicians document all damage for your claim and communicate directly with your adjuster for fast approval."}
+    },
+    {
+      "@type": "Question",
+      "name": "What areas of NYC do you serve?",
+      "acceptedAnswer": {"@type": "Answer", "text": "We serve all five NYC boroughs — Manhattan, Brooklyn, Queens, the Bronx, and Staten Island — plus Jersey City, Hoboken, Newark, Paterson, Elizabeth, and surrounding Northern New Jersey communities."}
+    }
+  ]
+}</script>
 </head>
 <body>
 
-  <!-- TOP URGENCY BAR -->
   <div class="top-bar">
     <span class="pulse"></span>
-    TECHNICIANS AVAILABLE NOW — Average Response Time: 30 Minutes
+    AVAILABLE 24/7 — EMERGENCY OR HOME IMPROVEMENT — (212) 555-0199
   </div>
 
-  <!-- HEADER -->
   <header class="header">
     <div class="container">
       <a href="/" class="logo">
         <div class="logo-icon">🏠</div>
         <div>
           <div class="logo-text">House<span>Help</span></div>
-          <div class="logo-sub">Emergency Services</div>
+          <div class="logo-sub">Home Services NYC</div>
         </div>
       </a>
-
       <nav class="nav">
+        <a href="/emergency/">🚨 Emergency</a>
+        <a href="/home-improvement/">🏠 Improvement</a>
         <a href="/water-damage-restoration/">Water Damage</a>
-        <a href="/locksmith-services/">Locksmith</a>
+        <a href="/locksmith/">Locksmith</a>
         <a href="/emergency-plumber/">Plumbing</a>
         <a href="/emergency-electrician/">Electrical</a>
-        <a href="/areas-served/">Areas Served</a>
       </nav>
-
       <div class="header-phone">
         <span style="color: var(--green); font-size: 10px;">●</span>
         <a href="tel:+12125550199">(212) 555-0199</a>
       </div>
-
       <button class="mobile-menu-btn" aria-label="Menu">☰</button>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
+  <section class="hero-split-headline">
     <div class="container">
-      <div class="hero-grid">
-        <div>
-          <div class="hero-badge">
-            <span class="pulse"></span>
-            24/7 Emergency Response
-          </div>
-          <h1>Home Emergency?<br>We're There in <em>30 Minutes.</em></h1>
-          <p class="hero-sub">Water damage, lockouts, plumbing disasters, electrical failures — one call gets a licensed technician to your door, day or night, across all five boroughs and New Jersey.</p>
-          <div class="hero-ctas">
-            <a href="tel:+12125550199" class="btn btn-red btn-lg">📞 Call Now — (212) 555-0199</a>
-            <a href="#services" class="btn btn-outline">Our Services ↓</a>
-          </div>
-        </div>
-
-        <div class="hero-form">
-          <h3>Get Emergency Help Now</h3>
-          <p class="form-sub">Describe your emergency and we'll dispatch immediately.</p>
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="YOUR_KEY_HERE">
-            <input type="hidden" name="subject" value="🚨 House Help Services Emergency Request">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Full name" required>
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="service">Type of Emergency</label>
-              <select id="service" name="service" required>
-                <option value="">Select service needed</option>
-                <option value="water-damage">🌊 Water Damage / Flooding</option>
-                <option value="locksmith">🔑 Locked Out / Lock Emergency</option>
-                <option value="plumbing">🔧 Plumbing Emergency</option>
-                <option value="electrical">⚡ Electrical Emergency</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="address">Address</label>
-              <input type="text" id="address" name="address" placeholder="Where do you need service?" required>
-            </div>
-            <div class="form-group">
-              <label for="details">What happened? (optional)</label>
-              <textarea id="details" name="details" rows="2" placeholder="Brief description of the emergency..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-red btn-lg">🚨 Request Emergency Help</button>
-          </form>
-        </div>
+      <h1>NYC's Complete Home Services —<br>Emergency or Improvement</h1>
+      <p>One company. Every home need. Whether it's a 3 AM flood or a kitchen renovation — House Help Services has you covered across all five boroughs.</p>
+      <div class="hero-cta-pair">
+        <a href="/emergency/" class="btn-emergency">🚨 I Have an Emergency</a>
+        <a href="/home-improvement/" class="btn-improvement">🏠 Home Improvement</a>
       </div>
+      <img src="/images/homepage-hero.png" alt="House Help Services NYC emergency and home improvement" style="width:60%;display:block;margin:0 auto 20px;border-radius:16px;">
     </div>
   </section>
 
-  <!-- TRUST BAR -->
   <div class="trust-bar">
     <div class="container">
       <div class="trust-items">
         <div class="trust-item"><span class="trust-icon">✓</span> Licensed & Insured</div>
-        <div class="trust-item"><span class="trust-icon">⏱</span> 30-Min Response</div>
-        <div class="trust-item"><span class="trust-icon">🔒</span> Upfront Pricing</div>
-        <div class="trust-item"><span class="trust-icon">🌙</span> 24/7 Available</div>
-        <div class="trust-item"><span class="trust-icon">⭐</span> 5-Star Rated</div>
+        <div class="trust-item"><span class="trust-icon">✓</span> 30-Min Emergency Response</div>
+        <div class="trust-item"><span class="trust-icon">✓</span> All 5 Boroughs + NJ</div>
+        <div class="trust-item"><span class="trust-icon">✓</span> Insurance Claims Handled</div>
+        <div class="trust-item"><span class="trust-icon">✓</span> 24/7 Available</div>
       </div>
     </div>
   </div>
 
-  <!-- SERVICES -->
   <section class="section" id="services">
     <div class="container">
-      <img src="/images/homerescue-hero.png" alt="House Help Services emergency technicians responding to a home emergency in NYC" style="width:60%;display:block;margin:20px auto;border-radius:12px;">
-    </div>
-    <div class="container">
       <div class="section-header">
-        <span class="section-label">What We Handle</span>
-        <h2>One Call. Every Home Emergency.</h2>
-        <p>From burst pipes to lockouts, we dispatch licensed professionals across NYC and NJ — 24 hours a day, 7 days a week.</p>
+        <span class="section-label">Our Services</span>
+        <h2>Two Ways We Help NYC Homeowners</h2>
+        <p>Emergency response when disaster strikes. Expert improvement when you're ready to upgrade.</p>
       </div>
 
-      <div class="services-grid">
-        <a href="/water-damage-restoration/" class="service-card">
-          <div class="card-icon">🌊</div>
-          <h3>Water Damage Restoration</h3>
-          <p>Emergency water extraction, structural drying, mold remediation, and full flood cleanup. We work directly with your insurance company to handle claims from start to finish.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
+      <div class="split-section">
+        <!-- Emergency Division -->
+        <div class="division-card emergency">
+          <span class="badge-red">🚨 24/7 Emergency</span>
+          <h2>Emergency Home Services</h2>
+          <p>Disaster doesn't wait for business hours. Our emergency crews respond in 30 minutes or less, around the clock.</p>
+          <ul class="service-list">
+            <li>🌊 <a href="/water-damage-restoration/">Water Damage Restoration</a></li>
+            <li>🔐 <a href="/locksmith/">Emergency Locksmith</a></li>
+            <li>🔧 <a href="/emergency-plumber/">Emergency Plumbing</a></li>
+            <li>⚡ <a href="/emergency-electrician/">Emergency Electrical</a></li>
+            <li>❄️ <a href="/hvac-emergency/">HVAC Emergency</a></li>
+            <li>🦠 <a href="/mold-remediation/">Mold Remediation</a></li>
+            <li>🔥 <a href="/fire-damage-restoration/">Fire & Smoke Damage</a></li>
+            <li>🚽 <a href="/sewage-cleanup/">Sewage Backup Cleanup</a></li>
+            <li>🪵 <a href="/emergency-board-up/">Emergency Board-Up</a></li>
+          </ul>
+          <a href="/emergency/" class="btn-emergency">🚨 Get Emergency Help Now</a>
+        </div>
 
-        <a href="/locksmith-services/" class="service-card">
-          <div class="card-icon">🔑</div>
-          <h3>Emergency Locksmith</h3>
-          <p>Locked out of your home, car, or office? Our licensed locksmiths arrive in 15–30 minutes for lockouts, lock changes, rekeying, and smart lock installation.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-
-        <a href="/emergency-plumber/" class="service-card">
-          <div class="card-icon">🔧</div>
-          <h3>Emergency Plumbing</h3>
-          <p>Burst pipes, sewer backups, water heater failures, and major leaks. Our master plumbers stop the damage fast and get your system back to normal.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
-
-        <a href="/emergency-electrician/" class="service-card">
-          <div class="card-icon">⚡</div>
-          <h3>Emergency Electrical</h3>
-          <p>Power outages, sparking outlets, burning smells, and exposed wiring. Licensed master electricians diagnose and repair dangerous electrical issues safely.</p>
-          <span class="card-link">Learn More →</span>
-        </a>
+        <!-- Improvement Division -->
+        <div class="division-card improvement">
+          <span class="badge-blue">🏠 Home Improvement</span>
+          <h2>Home Improvement Services</h2>
+          <p>Ready to upgrade your NYC home? Our licensed contractors deliver quality renovations on time and on budget.</p>
+          <ul class="service-list">
+            <li>🍳 <a href="/home-improvement/kitchen-remodeling/">Kitchen Remodeling</a></li>
+            <li>🛁 <a href="/home-improvement/bathroom-remodeling/">Bathroom Remodeling</a></li>
+            <li>🎨 <a href="/home-improvement/painting/">Interior & Exterior Painting</a></li>
+            <li>🪵 <a href="/home-improvement/flooring/">Flooring Installation</a></li>
+            <li>🔨 <a href="/home-improvement/handyman/">Handyman Services</a></li>
+            <li>❄️ <a href="/home-improvement/hvac/">HVAC Installation</a></li>
+          </ul>
+          <a href="/home-improvement/" class="btn-improvement">🏠 Start Your Project</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
   <section class="section section-dark">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" style="color:#fff">
         <span class="section-label">How It Works</span>
-        <h2>Help Is 3 Steps Away</h2>
-        <p>No waiting on hold. No runaround. Here's what happens when you call House Help Services.</p>
+        <h2 style="color:#fff">Help Is 3 Steps Away</h2>
+        <p style="color:rgba(255,255,255,0.75)">Emergency or improvement — same simple process.</p>
       </div>
-
       <div class="steps-grid">
         <div class="step">
-          <div class="step-number">1</div>
-          <h3>Call or Submit</h3>
-          <p>Call us or fill out the emergency form. Our dispatcher answers in under 60 seconds — no phone trees, no voicemail.</p>
+          <div class="step-num">1</div>
+          <h3>Call or Request Online</h3>
+          <p>Call (212) 555-0199 or fill out the form. Our team answers in under 60 seconds.</p>
         </div>
         <div class="step">
-          <div class="step-number">2</div>
-          <h3>We Dispatch</h3>
-          <p>The nearest available licensed technician is dispatched immediately. You get a name, ETA, and live tracking.</p>
+          <div class="step-num">2</div>
+          <h3>We Dispatch Immediately</h3>
+          <p>For emergencies, a technician is en route in minutes. For improvements, we schedule a same-day consultation.</p>
         </div>
         <div class="step">
-          <div class="step-number">3</div>
+          <div class="step-num">3</div>
           <h3>Problem Solved</h3>
-          <p>Your technician arrives, assesses the situation, gives you an upfront price, and fixes the problem. No surprise fees.</p>
+          <p>Upfront pricing, licensed professionals, quality work. No surprises — ever.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
-  <section class="section">
-    <div class="container">
-      <div class="stats-row">
-        <div class="stat-card">
-          <div class="stat-num">30min</div>
-          <div class="stat-label">Average Response Time</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">24/7</div>
-          <div class="stat-label">Always Available</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">100%</div>
-          <div class="stat-label">Licensed & Insured</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">5★</div>
-          <div class="stat-label">Customer Rated</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- AREAS SERVED -->
   <section class="section section-gray" id="areas">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">Areas Served</span>
+        <span class="section-label">Service Areas</span>
         <h2>Covering NYC & New Jersey</h2>
-        <p>Emergency home services across all five boroughs and Northern New Jersey.</p>
+        <p>Emergency and home improvement services across the entire metro area.</p>
       </div>
-
       <div class="areas-grid">
         <a href="/water-damage-restoration/manhattan/" class="area-link">Manhattan</a>
         <a href="/water-damage-restoration/brooklyn/" class="area-link">Brooklyn</a>
         <a href="/water-damage-restoration/queens/" class="area-link">Queens</a>
-        <a href="/water-damage-restoration/bronx/" class="area-link">Bronx</a>
+        <a href="/water-damage-restoration/bronx/" class="area-link">The Bronx</a>
         <a href="/water-damage-restoration/staten-island/" class="area-link">Staten Island</a>
         <a href="/water-damage-restoration/jersey-city/" class="area-link">Jersey City</a>
         <a href="/water-damage-restoration/hoboken/" class="area-link">Hoboken</a>
         <a href="/water-damage-restoration/newark/" class="area-link">Newark</a>
-        <a href="/locksmith/manhattan/" class="area-link">Locksmith Manhattan</a>
-        <a href="/locksmith/brooklyn/" class="area-link">Locksmith Brooklyn</a>
-        <a href="/locksmith/queens/" class="area-link">Locksmith Queens</a>
-        <a href="/locksmith/jersey-city/" class="area-link">Locksmith Jersey City</a>
+        <a href="/water-damage-restoration/astoria/" class="area-link">Astoria</a>
+        <a href="/water-damage-restoration/williamsburg/" class="area-link">Williamsburg</a>
+        <a href="/water-damage-restoration/harlem/" class="area-link">Harlem</a>
+        <a href="/water-damage-restoration/upper-east-side/" class="area-link">Upper East Side</a>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
   <section class="section">
     <div class="container">
       <div class="section-header">
         <span class="section-label">FAQ</span>
         <h2>Common Questions</h2>
       </div>
-
       <div class="faq-list">
         <div class="faq-item">
-          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">How fast can you respond to an emergency?</button>
-          <div class="faq-a"><p>We dispatch the nearest available technician immediately. Our average response time is 30 minutes or less across all NYC boroughs. For locksmith emergencies, we're often there in 15–20 minutes.</p></div>
+          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">What emergency services do you offer in NYC?</button>
+          <div class="faq-a"><p>House Help Services provides 24/7 emergency water damage restoration, locksmith, plumbing, electrical, HVAC, mold remediation, fire damage, sewage cleanup, and board-up across all five NYC boroughs and Northern NJ.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">Do you handle insurance claims for water damage?</button>
-          <div class="faq-a"><p>Yes. We work directly with all major insurance companies and can help you file and manage your water damage claim from start to finish. Our technicians document everything on-site to support your claim.</p></div>
+          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">What home improvement services do you offer?</button>
+          <div class="faq-a"><p>Kitchen remodeling, bathroom remodeling, interior and exterior painting, hardwood and tile flooring, handyman services, and HVAC installation across NYC.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">Are your technicians licensed and insured?</button>
-          <div class="faq-a"><p>Every House Help Services technician is fully licensed by the appropriate state and city agencies, bonded, and insured. We maintain $2M in general liability coverage and verify all contractor credentials before they join our network.</p></div>
+          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">How fast do you respond to emergencies in NYC?</button>
+          <div class="faq-a"><p>Average emergency response time is 30 minutes or less across all five boroughs. Locksmith emergencies are often resolved in 15–20 minutes. Available 24/7/365.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">What areas do you serve?</button>
-          <div class="faq-a"><p>We serve all five NYC boroughs — Manhattan, Brooklyn, Queens, the Bronx, and Staten Island — plus Jersey City, Hoboken, Newark, Paterson, Elizabeth, and surrounding Northern New Jersey communities.</p></div>
+          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">Do you work with insurance for emergency repairs?</button>
+          <div class="faq-a"><p>Yes. We work directly with all major insurance carriers. Our technicians document all damage and communicate with your adjuster for fast claim approval.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">How much does an emergency service call cost?</button>
-          <div class="faq-a"><p>We charge a transparent dispatch fee of $49–$99 depending on the service, which gets applied toward your final bill. Your technician provides an upfront quote before any work begins — no surprise charges, ever.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">Do you offer 24/7 service including holidays?</button>
-          <div class="faq-a"><p>Yes. House Help Services operates 24 hours a day, 7 days a week, 365 days a year — including weekends and holidays. Emergencies don't follow a schedule, and neither do we.</p></div>
+          <button class="faq-q" onclick="this.classList.toggle('active');this.nextElementSibling.style.maxHeight=this.nextElementSibling.style.maxHeight?null:this.nextElementSibling.scrollHeight+'px'">What areas of NYC do you serve?</button>
+          <div class="faq-a"><p>All five NYC boroughs — Manhattan, Brooklyn, Queens, the Bronx, and Staten Island — plus Jersey City, Hoboken, Newark, Paterson, Elizabeth, and surrounding Northern NJ.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Don't Wait. Call Now.</h2>
-      <p>Every minute counts in a home emergency. Our dispatchers are standing by 24/7.</p>
-      <a href="tel:+12125550199" class="cta-phone">(212) 555-0199</a>
-      <a href="#top" class="btn btn-white btn-lg">📋 Submit Emergency Form</a>
+  <section class="section" id="contact" style="background:#f8f9fa;">
+    <div class="container" style="max-width:600px;">
+      <div class="section-header">
+        <span class="section-label">Get Help Now</span>
+        <h2>Request Service in NYC</h2>
+      </div>
+      <div class="hero-form" style="box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_KEY_HERE">
+          <input type="hidden" name="subject" value="🏠 House Help Services Request — NYC">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option>🚨 Emergency — Water Damage</option>
+              <option>🚨 Emergency — Locksmith</option>
+              <option>🚨 Emergency — Plumbing</option>
+              <option>🚨 Emergency — Electrical</option>
+              <option>🚨 Emergency — HVAC</option>
+              <option>🚨 Emergency — Mold</option>
+              <option>🚨 Emergency — Fire Damage</option>
+              <option>🚨 Emergency — Sewage Backup</option>
+              <option>🚨 Emergency — Board-Up</option>
+              <option>🏠 Improvement — Kitchen Remodel</option>
+              <option>🏠 Improvement — Bathroom Remodel</option>
+              <option>🏠 Improvement — Painting</option>
+              <option>🏠 Improvement — Flooring</option>
+              <option>🏠 Improvement — Handyman</option>
+              <option>🏠 Improvement — HVAC Install</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="address">Service Address</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+          <div class="form-group">
+            <label for="details">Describe Your Need</label>
+            <textarea id="details" name="details" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-red btn-lg">Submit Request</button>
+        </form>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Emergency or Improvement — We're Ready</h2>
+      <p>Available 24/7 across all five NYC boroughs and New Jersey.</p>
+      <a href="tel:+12125550199" class="cta-phone">(212) 555-0199</a>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="logo" style="margin-bottom: 16px;">
+          <div class="logo" style="margin-bottom:16px;">
             <div class="logo-icon">🏠</div>
             <div>
               <div class="logo-text">House<span>Help</span></div>
-              <div class="logo-sub">Emergency Services</div>
+              <div class="logo-sub">Home Services NYC</div>
             </div>
           </div>
-          <p>NYC's trusted 24/7 home emergency service. Water damage restoration, locksmith, plumbing, and electrical — one call handles it all. Licensed, insured, and dispatched in minutes.</p>
+          <p>NYC's complete home services company. Emergency response and home improvement. Licensed, insured, 30-minute response.</p>
         </div>
         <div>
-          <h4>Services</h4>
+          <h4>🚨 Emergency</h4>
           <ul>
-            <li><a href="/water-damage-restoration/">Water Damage Restoration</a></li>
-            <li><a href="/locksmith-services/">Emergency Locksmith</a></li>
-            <li><a href="/emergency-plumber/">Emergency Plumbing</a></li>
-            <li><a href="/emergency-electrician/">Emergency Electrical</a></li>
+            <li><a href="/water-damage-restoration/">Water Damage</a></li>
+            <li><a href="/locksmith/">Locksmith</a></li>
+            <li><a href="/emergency-plumber/">Plumbing</a></li>
+            <li><a href="/emergency-electrician/">Electrical</a></li>
+            <li><a href="/hvac-emergency/">HVAC Emergency</a></li>
+            <li><a href="/mold-remediation/">Mold Remediation</a></li>
+            <li><a href="/fire-damage-restoration/">Fire Damage</a></li>
+            <li><a href="/sewage-cleanup/">Sewage Cleanup</a></li>
+            <li><a href="/emergency-board-up/">Board-Up</a></li>
           </ul>
         </div>
         <div>
-          <h4>NYC Areas</h4>
+          <h4>🏠 Improvement</h4>
           <ul>
-            <li><a href="/water-damage-restoration/manhattan/">Manhattan</a></li>
-            <li><a href="/water-damage-restoration/brooklyn/">Brooklyn</a></li>
-            <li><a href="/water-damage-restoration/queens/">Queens</a></li>
-            <li><a href="/water-damage-restoration/bronx/">Bronx</a></li>
-            <li><a href="/water-damage-restoration/staten-island/">Staten Island</a></li>
+            <li><a href="/home-improvement/kitchen-remodeling/">Kitchen Remodeling</a></li>
+            <li><a href="/home-improvement/bathroom-remodeling/">Bathroom Remodeling</a></li>
+            <li><a href="/home-improvement/painting/">Painting</a></li>
+            <li><a href="/home-improvement/flooring/">Flooring</a></li>
+            <li><a href="/home-improvement/handyman/">Handyman</a></li>
+            <li><a href="/home-improvement/hvac/">HVAC Install</a></li>
           </ul>
         </div>
         <div>
           <h4>Contact</h4>
           <ul>
             <li><a href="tel:+12125550199">📞 (212) 555-0199</a></li>
-            <li><a href="mailto:help@homerescueservices.com">📧 help@homerescueservices.com</a></li>
+            <li><a href="mailto:help@homerescueservices.com">📧 help@househelpservices.com</a></li>
             <li>Available 24/7/365</li>
-          </ul>
-          <h4 style="margin-top: 20px;">Follow Us</h4>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Google Business</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 House Help Services LLC. All rights reserved. Licensed & Insured. NYC DCA Licensed.</p>
+        <p>&copy; 2026 House Help Services LLC. All rights reserved.</p>
       </div>
     </div>
   </footer>
