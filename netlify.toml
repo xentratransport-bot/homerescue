@@ -1,0 +1,33 @@
+# HomeRescue Netlify Config
+
+[build]
+  publish = "."
+
+# Pretty URLs (trailing slashes)
+[[redirects]]
+  from = "/water-damage-restoration"
+  to = "/water-damage-restoration/"
+  status = 301
+
+[[redirects]]
+  from = "/locksmith-services"
+  to = "/locksmith/"
+  status = 301
+
+# Custom headers for performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
