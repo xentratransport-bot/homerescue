@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xentra Transport — Client Reviews</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .ad {
+    width: 1080px;
+    height: 1080px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+  }
+
+  /* Watermark */
+  .watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130px;
+    font-weight: 900;
+    color: rgba(0,0,0,0.04);
+    white-space: nowrap;
+    letter-spacing: -4px;
+    pointer-events: none;
+    z-index: 0;
+    line-height: 1;
+    text-align: center;
+  }
+
+  /* Top bar */
+  .top-bar {
+    background: #0a1628;
+    padding: 18px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand-icon {
+    width: 36px;
+    height: 36px;
+    background: #c9a84c;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .brand-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .brand-tag {
+    color: #c9a84c;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .top-badge {
+    background: rgba(201,168,76,0.15);
+    border: 1px solid #c9a84c;
+    color: #c9a84c;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* Main content */
+  .main {
+    flex: 1;
+    display: flex;
+    z-index: 1;
+    padding: 40px 48px;
+    gap: 40px;
+    align-items: center;
+  }
+
+  /* Left — reviews */
+  .reviews {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c9a84c;
+    margin-bottom: 4px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: #0a1628;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .review-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border: 1px solid #f0f0f0;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #0a1628;
+    color: #c9a84c;
+    font-size: 14px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    letter-spacing: 0.5px;
+  }
+
+  .review-body { flex: 1; }
+
+  .reviewer-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0a1628;
+    margin-bottom: 2px;
+  }
+
+  .reviewer-role {
+    font-size: 11px;
+    color: #888;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  .stars {
+    color: #f5a623;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .review-text {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.55;
+    font-style: italic;
+  }
+
+  /* Right — phone mockup */
+  .phone-side {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .phone-wrap {
+    position: relative;
+    transform: rotate(4deg);
+  }
+
+  .phone {
+    width: 240px;
+    background: #0a1628;
+    border-radius: 36px;
+    padding: 14px;
+    box-shadow: 0 20px 60px rgba(10,22,40,0.35);
+  }
+
+  .phone-screen {
+    background: #f4f6fa;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+
+  .phone-notch {
+    background: #0a1628;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .notch-bar {
+    width: 70px;
+    height: 5px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 3px;
+  }
+
+  .screen-header {
+    background: #0a1628;
+    color: #fff;
+    padding: 12px 16px 14px;
+    text-align: center;
+  }
+
+  .screen-header-label {
+    font-size: 10px;
+    color: #c9a84c;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .screen-header-title {
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 2px;
+  }
+
+  .map-area {
+    background: #e8edf5;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .map-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+  }
+
+  .map-route {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    right: 15%;
+    height: 3px;
+    background: linear-gradient(90deg, #0a1628, #c9a84c);
+    border-radius: 2px;
+  }
+
+  .map-dot-start {
+    position: absolute;
+    top: calc(30% - 5px);
+    left: 15%;
+    width: 10px;
+    height: 10px;
+    background: #0a1628;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  .map-truck {
+    position: absolute;
+    top: calc(30% - 10px);
+    left: 55%;
+    font-size: 20px;
+  }
+
+  .map-dot-end {
+    position: absolute;
+    top: calc(30% - 8px);
+    right: 15%;
+    width: 14px;
+    height: 14px;
+    background: #c9a84c;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  .map-label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #0a1628;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    white-space: nowrap;
+  }
+
+  .screen-body {
+    padding: 12px 14px;
+    background: #fff;
+  }
+
+  .status-badge {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 10px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .status-dot { width: 6px; height: 6px; background: #4caf50; border-radius: 50%; }
+
+  .order-info {
+    font-size: 11px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .order-sub {
+    font-size: 10px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+
+  .eta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f6fa;
+    border-radius: 10px;
+    padding: 8px 12px;
+  }
+
+  .eta-label { font-size: 9px; color: #888; font-weight: 600; text-transform: uppercase; }
+  .eta-value { font-size: 13px; font-weight: 800; color: #0a1628; }
+
+  .screen-footer {
+    background: #0a1628;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .screen-footer-brand {
+    color: #c9a84c;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .screen-footer-sub {
+    color: rgba(255,255,255,0.4);
+    font-size: 8px;
+    font-weight: 600;
+  }
+
+  /* Stats */
+  .stats-row {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .stat {
+    flex: 1;
+    background: #0a1628;
+    border-radius: 12px;
+    padding: 14px 10px;
+    text-align: center;
+  }
+
+  .stat-num {
+    color: #c9a84c;
+    font-size: 22px;
+    font-weight: 900;
+    display: block;
+  }
+
+  .stat-label {
+    color: rgba(255,255,255,0.6);
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+  }
+
+  /* Bottom bar */
+  .bottom-bar {
+    background: #0a1628;
+    padding: 16px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .bottom-left {
+    display: flex;
+    gap: 28px;
+  }
+
+  .bottom-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .bottom-item span { color: #c9a84c; font-size: 15px; }
+
+  .bottom-cta {
+    background: #c9a84c;
+    color: #0a1628;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="ad">
+
+  <!-- Watermark -->
+  <div class="watermark">REVIEWS</div>
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="brand">
+      <div class="brand-icon">🚚</div>
+      <div>
+        <div class="brand-name">Xentra Transport</div>
+        <div class="brand-tag">Same-Day NYC Courier</div>
+      </div>
+    </div>
+    <div class="top-badge">⭐ 93 Five-Star Reviews</div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Reviews -->
+    <div class="reviews">
+      <div>
+        <div class="section-label">Client Testimonials</div>
+        <div class="section-title">What Our<br>Clients Say</div>
+      </div>
+
+      <div class="review-card">
+        <div class="avatar">MT</div>
+        <div class="review-body">
+          <div class="reviewer-name">Marcus T.</div>
+          <div class="reviewer-role">Partner — Midtown Law Firm</div>
+          <div class="stars">★★★★★</div>
+          <div class="review-text">"Xentra picked up our legal documents from our Midtown office and delivered to Brooklyn in under 2 hours. Incredibly reliable — we use them for every urgent filing."</div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="avatar">SK</div>
+        <div class="review-body">
+          <div class="reviewer-name">Sarah K.</div>
+          <div class="reviewer-role">Producer — NYC Ad Agency</div>
+          <div class="stars">★★★★★</div>
+          <div class="review-text">"They handled a time-sensitive campaign shoot delivery without breaking a sweat. Our entire production team now uses Xentra for every rush delivery."</div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="avatar">JP</div>
+        <div class="review-body">
+          <div class="reviewer-name">Dr. James P.</div>
+          <div class="reviewer-role">Director — Medical Diagnostics Lab</div>
+          <div class="stars">★★★★★</div>
+          <div class="review-text">"Consistent, professional, always on time. Our lab specimens arrive intact and on schedule every single time. Xentra is simply the best courier in NYC."</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone + stats -->
+    <div class="phone-side">
+      <div class="phone-wrap">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-notch"><div class="notch-bar"></div></div>
+            <div class="screen-header">
+              <div class="screen-header-label">Live Tracking</div>
+              <div class="screen-header-title">Your Delivery</div>
+            </div>
+            <div class="map-area">
+              <div class="map-route"></div>
+              <div class="map-dot-start"></div>
+              <div class="map-truck">🚚</div>
+              <div class="map-dot-end"></div>
+              <div class="map-label">📍 Arriving soon</div>
+            </div>
+            <div class="screen-body">
+              <div class="status-badge"><div class="status-dot"></div> Out for Delivery</div>
+              <div class="order-info">Order #XNT-20847</div>
+              <div class="order-sub">Manhattan → Brooklyn</div>
+              <div class="eta-row">
+                <div><div class="eta-label">ETA</div><div class="eta-value">14 min</div></div>
+                <div><div class="eta-label">Distance</div><div class="eta-value">8.2 mi</div></div>
+              </div>
+            </div>
+            <div class="screen-footer">
+              <div class="screen-footer-brand">Xentra Transport</div>
+              <div class="screen-footer-sub">REAL-TIME TRACKING</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat-num">500+</span>
+          <div class="stat-label">B2B Clients</div>
+        </div>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <div class="stat-label">IC Drivers</div>
+        </div>
+        <div class="stat">
+          <span class="stat-num">5</span>
+          <div class="stat-label">Boroughs</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="bottom-bar">
+    <div class="bottom-left">
+      <div class="bottom-item"><span>🌐</span> xentratransport.com</div>
+      <div class="bottom-item"><span>📞</span> 877-709-2711</div>
+      <div class="bottom-item"><span>📍</span> New York City</div>
+    </div>
+    <div class="bottom-cta">Book a Delivery</div>
+  </div>
+
+</div>
+</body>
+</html>
